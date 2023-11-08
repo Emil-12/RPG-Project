@@ -1,0 +1,42 @@
+#include <iostream>
+#include <Windows.h>
+
+struct Hero
+{
+	short health = 100;
+	int damage = 15;
+	short intelegence = 2;
+	short dexterity = 0;
+	short range;
+    int choise;
+};
+
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	Hero hero;
+
+	std::cout << "Добро пожаловать в игру 'Владыки хаоса'" << std::endl;
+	std::cout << "Нажмите 1 чтобы начать" << std::endl;
+
+	std::cin >> hero.choise;
+
+	if (hero.choise == 1)
+	{
+		std::cout << "Выберите ранг персонажа: 1 - крестьянин, 2 - знатный горожанин, 3- вельможа\n(от выбранного ранга зависит ваша значимость и скорость прох-дения сюжета)"<< std::endl;
+		std::cin >> hero.range;
+		if(hero.range == 1)
+		{
+			for (int i = 0; i < 1; i++)
+			{
+				std::cout << "Вы выбрали ранг 'крестьянин', преимуществ немного потому что ";
+				std
+			}
+		}
+	}
+	else
+	{
+		std::cout << "Error!";
+	}
+}
